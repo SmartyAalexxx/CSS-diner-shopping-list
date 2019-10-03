@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    transition: all .1s ease-in;
+}
+
+html{
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', Trebuchet, Arial, sans-serif;
+    font-size: 18px;
+    background-color: #3b3f45;
+    border: 10px solid #fff;
+    min-height: 100%;
+
+}
+    
+.container {
+    margin: 0 auto;
+    max-width: 700px;
+    width: 96%;
+    color: #fff
+}
+    
+header, footer {
+    background-color: #4a4f56;
+    margin: 0;
+    padding:  20px 20px;
+    color: #ce767c;
+    font-size: 1.5em;
+    text-align: center
+}
+.title {
+    margin-top: 0%;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+main{
+    margin: 20px 0;
+}
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.list__item {
+    background-color: #88839e;
+    border-top: 2px solid #88839e;
+    border-bottom: 2px solid #88839e;
+
+}
+
+.list__item:nth-child(odd) {
+    background-color: #7a7593;
+    border-top: 2px solid #7a7593;
+    border-bottom: 2px solid #7a7593;
+    
+}
+
+.list__item label {
+    display: block;
+    padding: 10px;
+}
+
+.list__item input {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.list__item span {
+    vertical-align: middle;
+}
+
+.list__item small {
+    opacity: .7;
+    margin-left: 5px; 
+}
+
+.list__item small:not(:empty):before {
+    content: '('
+}
+.list__item small:not(:empty):after{
+    content: ')';
+}
+
+.list__item:hover {
+    border-color: #fff;
+}
+
+.list__item:active
+{
+    background-color: #c05960;
+}
+
+.list__item input:checked + span {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+/* Пробывал писать сам изначально(интуитивно), но получалось далеко не очень ибо не знал на пямять всех этих свойств. Но с этого я нашел "+" - находил свои ошибки и пересматривал видео для их обнаружения */
